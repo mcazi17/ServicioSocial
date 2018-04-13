@@ -6,7 +6,8 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { 
 MyApp,
 HomePage,
-ListPage
+ListPage,
+InventoryPage
  } from "../pages/index.pages";
 
 import { StatusBar } from '@ionic-native/status-bar';
