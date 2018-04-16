@@ -7,12 +7,48 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>inventory</ion-title>
+    <ion-title>Inventory</ion-title>
   </ion-navbar>
 
 </ion-header>
 
-
 <ion-content padding>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-row>
+        <ion-col>
+          <div> ID </div>
+        </ion-col>
+        <ion-col col-6>
+          <div> PRUDUCTO </div>
+        </ion-col>
+        <ion-col>
+          <div> PRECIOS</div>
+        </ion-col>
+        <ion-col col-sm-1> </ion-col>
+      </ion-row>
+    </ion-item>
+
+    <ion-item *ngFor="let item of items">
+      <ion-row>
+        <ion-col>
+          <div> 1 </div>
+        </ion-col>
+        <ion-col col-6>
+          <div> Café </div>
+        </ion-col>
+        <ion-col>
+          <div> $35.00</div>
+        </ion-col>
+        <ion-col col-sm-1>
+          <button ion-button (click)="onClickItem(item)">Editar</button>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+
+  </ion-list>
+
 
 </ion-content>
