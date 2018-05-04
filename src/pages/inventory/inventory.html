@@ -1,9 +1,3 @@
-<!--
-  Generated template for the InventoryPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
@@ -18,29 +12,88 @@
 
     <ion-item>
       <ion-row>
-        <ion-col>
+        <ion-col col-sm-1>
           <div> ID </div>
         </ion-col>
-        <ion-col col-6>
+        <ion-col col-3>
           <div> PRUDUCTO </div>
         </ion-col>
         <ion-col>
-          <div> PRECIOS</div>
+          <div> CHICO</div>
+        </ion-col>
+        <ion-col>
+          <div> MEDIANO</div>
+        </ion-col>
+        <ion-col>
+          <div> GRANDE</div>
         </ion-col>
         <ion-col col-sm-1> </ion-col>
       </ion-row>
     </ion-item>
 
-    <ion-item *ngFor="let item of items">
+    <ion-item *ngFor="let coffee of coffees">
       <ion-row>
-        <ion-col>
-          <div> 1 </div>
+        <ion-col col-sm-1>
+          <div> {{coffee.id}} </div>
         </ion-col>
-        <ion-col col-6>
-          <div> Café </div>
+        <ion-col col-3>
+          <div>Café {{coffee.name}} </div>
         </ion-col>
         <ion-col>
-          <div> $35.00</div>
+          <div>{{coffee.priceSmall}}</div>
+        </ion-col>
+        <ion-col>
+          <div>{{coffee.priceMedium}}</div>
+        </ion-col>
+        <ion-col>
+          <div>{{coffee.priceLarge}}</div>
+        </ion-col>
+        <ion-col col-sm-1>
+          <button ion-button (click)="onClickItem(item)">Editar</button>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+
+    <ion-item *ngFor="let tea of teas">
+      <ion-row>
+        <ion-col col-sm-1>
+          <div> {{tea.id}} </div>
+        </ion-col>
+        <ion-col col-3>
+          <div>Té {{tea.name}} </div>
+        </ion-col>
+        <ion-col>
+          <div> {{tea.priceSmall}}</div>
+        </ion-col>
+        <ion-col>
+          <div> {{tea.priceMedium}}</div>
+        </ion-col>
+        <ion-col>
+          <div> {{tea.priceLarge}}</div>
+        </ion-col>
+        <ion-col col-sm-1>
+          <button ion-button (click)="onClickItem(item)">Editar</button>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+
+
+    <ion-item *ngFor="let other of others">
+      <ion-row>
+        <ion-col col-sm-1>
+          <div> {{other.id}} </div>
+        </ion-col>
+        <ion-col col-3>
+          <div> {{other.name}} </div>
+        </ion-col>
+        <ion-col>
+          <div> {{other.priceSmall}}</div>
+        </ion-col>
+        <ion-col>
+          <div> {{other.priceMedium}}</div>
+        </ion-col>
+        <ion-col>
+          <div> {{other.priceLarge}}</div>
         </ion-col>
         <ion-col col-sm-1>
           <button ion-button (click)="onClickItem(item)">Editar</button>

@@ -1,9 +1,134 @@
 {
-    "items": [
+    "coffees": [
         {
-            "id": "",
-            "name": "",
-            "price": ""
+            "id": 1,
+            "name": "Americano",
+            "priceSmall": 15,
+            "priceMedium": 25,
+            "priceLarge": 25
+        },
+        {
+            "id": 2,
+            "name": "Mocha",
+            "priceSmall": 15,
+            "priceMedium": 25,
+            "priceLarge": 25
+        },
+        {
+            "id": 3,
+            "name": "Espresso",
+            "priceSmall": 15,
+            "priceMedium": 25,
+            "priceLarge": 25
+        },
+        {
+            "id": 4,
+            "name": "Cappuccino",
+            "priceSmall": 15,
+            "priceMedium": 25,
+            "priceLarge": 25
+        },
+        {
+            "id": 5,
+            "name": "Latte",
+            "priceSmall": 15,
+            "priceMedium": 25,
+            "priceLarge": 25
+        }
+    ],
+    "teas": [
+        {
+            "id": 6,
+            "name": "Negro",
+            "priceSmall": 15,
+            "priceMedium": 25,
+            "priceLarge": 25
+        },
+        {
+            "id": 7,
+            "name": "Chai",
+            "priceSmall": 15,
+            "priceMedium": 25,
+            "priceLarge": 25
+        },
+        {
+            "id": 8,
+            "name": "Manzanilla",
+            "priceSmall": 15,
+            "priceMedium": 25,
+            "priceLarge": 25
+        },
+        {
+            "id": 9,
+            "name": "Verde",
+            "priceSmall": 15,
+            "priceMedium": 25,
+            "priceLarge": 25
+        },
+        {
+            "id": 10,
+            "name": "Menta",
+            "priceSmall": 15,
+            "priceMedium": 25,
+            "priceLarge": 25
+        },
+        {
+            "id": 11,
+            "name": "Rojo",
+            "priceSmall": 15,
+            "priceMedium": 25,
+            "priceLarge": 25
+        }
+    ],
+    "others": [
+        {
+            "id": 12,
+            "name": "Frappe de Latte",
+            "priceSmall": 15,
+            "priceMedium": 25,
+            "priceLarge": 25
+        },
+        {
+            "id": 13,
+            "name": "Frappe de Mocha",
+            "priceSmall": 15,
+            "priceMedium": 25,
+            "priceLarge": 25
+        },
+        {
+            "id": 14,
+            "name": "Frappe de Oreo",
+            "priceSmall": 15,
+            "priceMedium": 25,
+            "priceLarge": 25
+        },
+        {
+            "id": 15,
+            "name": "Frappe de Chocolate",
+            "priceSmall": 15,
+            "priceMedium": 25,
+            "priceLarge": 25
+        },
+        {
+            "id": 16,
+            "name": "Frappe de Chai",
+            "priceSmall": 15,
+            "priceMedium": 25,
+            "priceLarge": 25
+        },
+        {
+            "id": 17,
+            "name": "Chocolate Caliente",
+            "priceSmall": 15,
+            "priceMedium": 25,
+            "priceLarge": 25
+        },
+        {
+            "id": 18,
+            "name": "Sodas",
+            "priceSmall": 15,
+            "priceMedium": 25,
+            "priceLarge": 25
         }
     ]
 }
