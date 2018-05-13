@@ -37,4 +37,8 @@ export class InventoryPage {
     this.teas = data.teas;
     this.others = data.others;
   }
+
+  nextPage(){
+    
+  }
 }
