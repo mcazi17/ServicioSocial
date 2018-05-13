@@ -9,7 +9,6 @@
 <ion-content padding>
 
   <ion-list>
-
     <ion-item>
       <ion-row>
         <ion-col col-sm-1>
@@ -24,10 +23,9 @@
         <ion-col>
           <div> MEDIANO</div>
         </ion-col>
-        <ion-col>
+        <ion-col col-sm-1>
           <div> GRANDE</div>
         </ion-col>
-        <ion-col col-sm-1> </ion-col>
       </ion-row>
     </ion-item>
 
@@ -45,11 +43,8 @@
         <ion-col>
           <div>{{coffee.price_m}}</div>
         </ion-col>
-        <ion-col>
-          <div>{{coffee.price_l}}</div>
-        </ion-col>
         <ion-col col-sm-1>
-          <button ion-button (click)="openModal(coffee.id, 'coffees')">Editar</button>
+          <div>{{coffee.price_l }}</div>
         </ion-col>
       </ion-row>
     </ion-item>
@@ -60,20 +55,17 @@
           <div> {{tea.id}} </div>
         </ion-col>
         <ion-col col-3>
-          <div>{{tea.name}} </div>
+          <div>{{tea.name}}</div>
         </ion-col>
         <ion-col>
-          <div> {{tea.price_s}}</div>
+          <div> {{tea.price_s }}</div>
         </ion-col>
         <ion-col>
-          <div> {{tea.price_m}}</div>
-        </ion-col>
-        <ion-col>
-          <div> {{tea.price_l}}</div>
+          <div> {{tea.price_m }}</div>
         </ion-col>
         <ion-col col-sm-1>
-          <button ion-button (click)="openModal(tea.id, 'teas')">Editar</button>
-        </ion-col>
+          <div> {{tea.price_l }}</div>
+        </ion-col>        
       </ion-row>
     </ion-item>
 
@@ -87,17 +79,14 @@
           <div> {{other.name}} </div>
         </ion-col>
         <ion-col>
-          <div> {{other.price_s}}</div>
+          <div> {{other.price_s }}</div>
         </ion-col>
         <ion-col>
-          <div> {{other.price_m}}</div>
-        </ion-col>
-        <ion-col>
-          <div> {{other.price_l}}</div>
+          <div> {{other.price_m }}</div>
         </ion-col>
         <ion-col col-sm-1>
-          <button ion-button (click)="openModal(other.id, 'others')">Editar</button>
-        </ion-col>
+          <div> {{other.price_l }}</div>
+        </ion-col>      
       </ion-row>
     </ion-item>
 
