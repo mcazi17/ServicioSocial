@@ -5,10 +5,10 @@ import { DataFinder } from "../../providers/index.providers";
 
 @IonicPage()
 @Component({
-  selector: 'page-modal-inventory',
+  selector: 'page-modal-options',
   templateUrl: 'modal.html',
 })
-export class ModalInventory {
+export class ModalOptions {
   item: any;
   name: String;
   price_s: number;

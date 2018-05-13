@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { NavController, NavParams, ModalController } from 'ionic-angular';
 import { DataFinder } from "../../providers/index.providers";
 import { MenuItem } from '../menuitem';
-import { ModalInventory } from "../modal-inventory/modal";
 
 /**
  * Generated class for the InventoryPage page.
