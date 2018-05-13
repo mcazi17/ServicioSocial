@@ -19,7 +19,7 @@ export class InventoryPage {
   coffees = [];
   teas = [];
   others = [];
-
+  
   constructor(private datafinder: DataFinder,
     public modal: ModalController) {
   }

@@ -5,7 +5,7 @@ export class MenuItem {
     price_s: number;
     price_m: number;
     price_l: number;
-    
+
     constructor(id: number, name: string, price_s: number, price_m: number, price_l: number) {
         this.id = id;
         this.name = name;
@@ -13,4 +13,10 @@ export class MenuItem {
         this.price_m = price_m;
         this.price_l = price_l;
     }
-};
+}
+
+export enum Size{
+    small,
+    medium,
+    large
+}

@@ -12,30 +12,31 @@
 </ion-header>
 
 <ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-3>
+        <a (click)="selectOption({{price_s}},'size.small')"><img src="{{item_size_s}}"></a>
+      </ion-col>
+      <ion-col col-3>
+        <a (click)="selectOption({{price_m}},'size.medium')"><img src="{{item_size_m}}"></a>
+      </ion-col>
+      <ion-col col-3>
+        <a (click)="selectOption({{price_l}},'size.large')"><img src="{{itemsize_l}}"></a>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-3>
+        <div>{{price_s}}</div>
+      </ion-col>
+      <ion-col col-3>
+        <div>{{price_m}}</div>
+      </ion-col>
+      <ion-col col-3>
+        <div>{{price_l}}</div>
+      </ion-col>
+    </ion-row>
 
-  <ion-list>
-    <ion-item>
-      <ion-label color="primary" icon-end>
-        Chico
-        <ion-icon name="logo-usd"></ion-icon>
-      </ion-label>
-      <ion-input type="number" [(ngModel)]="price_s"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label color="primary" icon-end>
-        Mediano
-        <ion-icon name="logo-usd"></ion-icon>
-      </ion-label>
-      <ion-input type="number" [(ngModel)]="price_m"></ion-input>
-    </ion-item>
-    <ion-item> 
-      <ion-label color="primary" icon-end>
-        Grande
-        <ion-icon name="logo-usd"></ion-icon>
-      </ion-label>
-      <ion-input type="number" [(ngModel)]="price_l"></ion-input>
-    </ion-item>
-  </ion-list>
+  </ion-grid>
 
   <div padding>
     <button block ion-button (click)="showConfirm()">Guardar datos</button>
