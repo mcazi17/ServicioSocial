@@ -19,7 +19,7 @@
           <div> PRUDUCTO </div>
         </ion-col>
         <ion-col>
-          <div> CHICO</div>
+          <div>CHICO</div>
         </ion-col>
         <ion-col>
           <div> MEDIANO</div>
@@ -37,19 +37,19 @@
           <div> {{coffee.id}} </div>
         </ion-col>
         <ion-col col-3>
-          <div>Café {{coffee.name}} </div>
+          <div>{{coffee.name}} </div>
         </ion-col>
         <ion-col>
-          <div>{{coffee.priceSmall}}</div>
+          <div>{{coffee.price_s}}</div>
         </ion-col>
         <ion-col>
-          <div>{{coffee.priceMedium}}</div>
+          <div>{{coffee.price_m}}</div>
         </ion-col>
         <ion-col>
-          <div>{{coffee.priceLarge}}</div>
+          <div>{{coffee.price_l}}</div>
         </ion-col>
         <ion-col col-sm-1>
-          <button ion-button (click)="onClickItem(item)">Editar</button>
+          <button ion-button (click)="openModal(coffee.id, 'coffees')">Editar</button>
         </ion-col>
       </ion-row>
     </ion-item>
@@ -60,19 +60,19 @@
           <div> {{tea.id}} </div>
         </ion-col>
         <ion-col col-3>
-          <div>Té {{tea.name}} </div>
+          <div>{{tea.name}} </div>
         </ion-col>
         <ion-col>
-          <div> {{tea.priceSmall}}</div>
+          <div> {{tea.price_s}}</div>
         </ion-col>
         <ion-col>
-          <div> {{tea.priceMedium}}</div>
+          <div> {{tea.price_m}}</div>
         </ion-col>
         <ion-col>
-          <div> {{tea.priceLarge}}</div>
+          <div> {{tea.price_l}}</div>
         </ion-col>
         <ion-col col-sm-1>
-          <button ion-button (click)="onClickItem(item)">Editar</button>
+          <button ion-button (click)="openModal(tea.id, 'teas')">Editar</button>
         </ion-col>
       </ion-row>
     </ion-item>
@@ -87,21 +87,19 @@
           <div> {{other.name}} </div>
         </ion-col>
         <ion-col>
-          <div> {{other.priceSmall}}</div>
+          <div> {{other.price_s}}</div>
         </ion-col>
         <ion-col>
-          <div> {{other.priceMedium}}</div>
+          <div> {{other.price_m}}</div>
         </ion-col>
         <ion-col>
-          <div> {{other.priceLarge}}</div>
+          <div> {{other.price_l}}</div>
         </ion-col>
         <ion-col col-sm-1>
-          <button ion-button (click)="onClickItem(item)">Editar</button>
+          <button ion-button (click)="openModal(other.id, 'others')">Editar</button>
         </ion-col>
       </ion-row>
     </ion-item>
 
   </ion-list>
-
-
 </ion-content>

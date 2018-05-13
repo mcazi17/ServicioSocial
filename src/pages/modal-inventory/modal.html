@@ -1,0 +1,43 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{name}}</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="closeModal()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary" icon-end>
+        Chico
+        <ion-icon name="logo-usd"></ion-icon>
+      </ion-label>
+      <ion-input type="number" [(ngModel)]="price_s"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" icon-end>
+        Mediano
+        <ion-icon name="logo-usd"></ion-icon>
+      </ion-label>
+      <ion-input type="number" [(ngModel)]="price_m"></ion-input>
+    </ion-item>
+    <ion-item> 
+      <ion-label color="primary" icon-end>
+        Grande
+        <ion-icon name="logo-usd"></ion-icon>
+      </ion-label>
+      <ion-input type="number" [(ngModel)]="price_l"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <div padding>
+    <button block ion-button (click)="showConfirm()">Guardar datos</button>
+  </div>
+</ion-content>

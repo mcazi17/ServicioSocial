@@ -7,7 +7,8 @@ import {
 MyApp,
 HomePage,
 ListPage,
-InventoryPage
+InventoryPage,
+ModalInventory
  } from "../pages/index.pages";
 
  //providers
@@ -22,7 +23,8 @@ import { HttpModule } from '@angular/http';
     MyApp,
     HomePage,
     ListPage,
-    InventoryPage
+    InventoryPage,
+    ModalInventory
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,8 @@ import { HttpModule } from '@angular/http';
     MyApp,
     HomePage,
     ListPage,
-    InventoryPage
+    InventoryPage,
+    ModalInventory
   ],
   providers: [
     DataFinder,

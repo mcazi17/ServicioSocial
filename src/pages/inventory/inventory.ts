@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, ModalController } from 'ionic-angular';
 import { DataFinder } from "../../providers/index.providers";
 import { MenuItem } from '../menuitem';
+import { ModalInventory } from "../modal-inventory/modal";
 
 /**
  * Generated class for the InventoryPage page.
@@ -17,10 +18,11 @@ import { MenuItem } from '../menuitem';
 export class InventoryPage {
   selectedItem: MenuItem;
   coffees = [];
-  teas= [];
-  others= [];
+  teas = [];
+  others = [];
 
-  constructor( private datafinder:DataFinder) {
+  constructor(private datafinder: DataFinder,
+    public modal: ModalController) {
   }
 
   ionViewDidLoad() {
@@ -28,21 +30,48 @@ export class InventoryPage {
       this.setMenuItemsData(data);
     });
   }
-  
 
-  setMenuItemsData(data: any){
-    this.coffees = data.coffees;  
+
+  setMenuItemsData(data: any) {
+    this.coffees = data.coffees;
     this.teas = data.teas;
     this.others = data.others;
-
-    console.log("Coffes array: "+ this.coffees[0].priceSmall );    
-    console.log("Coffes array: "+ JSON.stringify(this.coffees) );
-    console.log("Teas array: "+JSON.stringify(this.teas));
-    console.log("Others array: "+JSON.stringify(this.others));
   }
 
-  onClickItem(item){
-    this.selectedItem = item;
+  openModal(id: Number, arrayName: String) {
+    console.log("Array: " + arrayName);
+    console.log("Id: " + id);
+    var currentItems = [];
+
+    switch (arrayName) {
+      case "coffees":
+        currentItems = this.coffees;
+        break;
+      case "teas":
+        currentItems = this.teas;
+        break;
+      case "others":
+        currentItems = this.others;
+        break;
+    }
+
+    for (let i in currentItems) {
+      if (currentItems[i].id == id) {
+        this.selectedItem = new MenuItem(currentItems[i].id, currentItems[i].name, currentItems[i].price_s, currentItems[i].price_m, currentItems[i].price_l);
+        //console.log("Passed Item:" + JSON.stringify(this.selectedItem));
+      }
+    }
+    var MyItem = {
+      id: id,
+      name: arrayName
+    }
+    //let myModal = this.modal.create(ModalInventory, {item: MyItem});
+    let myModal = this.modal.create(ModalInventory, {item:this.selectedItem});
+    myModal.present();
+
+    myModal.onDidDismiss((item) => {
+      console.log("My returned data: "+item);
+    });
   }
 
 }
