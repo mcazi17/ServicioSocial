@@ -30,8 +30,8 @@ export class ModalOptions {
     this.price_m = this.item.price_m;
     this.price_l = this.item.price_l;
     console.log("item.name:" + this.name);
-
-
+    
+    this.selectImage(this.arrayName);
   }
 
   selectImage(arrayName: string) {
