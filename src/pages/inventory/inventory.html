@@ -6,7 +6,7 @@
     <ion-title>Inventory</ion-title>
 
     <ion-buttons end>
-      <button ion-button color="primary"(click)="nextPage()" outline>Editar Elementos</button>
+      <button ion-button color="primary" (click)="nextPage()" outline>Editar Elementos</button>
     </ion-buttons>
   </ion-navbar>
 </ion-header>
@@ -32,7 +32,10 @@
         </ion-col>
       </ion-row>
     </ion-item>
+  </ion-list>
 
+  <ion-item-group>
+    <ion-item-divider color="light">Cafés</ion-item-divider>
     <ion-item *ngFor="let coffee of coffees">
       <ion-row>
         <ion-col col-sm-1>
@@ -52,7 +55,10 @@
         </ion-col>
       </ion-row>
     </ion-item>
+  </ion-item-group>
 
+  <ion-item-group>
+    <ion-item-divider color="light">Tés</ion-item-divider>
     <ion-item *ngFor="let tea of teas">
       <ion-row>
         <ion-col col-sm-1>
@@ -72,7 +78,10 @@
         </ion-col>
       </ion-row>
     </ion-item>
+  </ion-item-group>
 
+  <ion-item-group>
+    <ion-item-divider color="light">Bebidas frías</ion-item-divider>
     <ion-item *ngFor="let cold_drink of cold_drinks">
       <ion-row>
         <ion-col col-sm-1>
@@ -92,7 +101,10 @@
         </ion-col>
       </ion-row>
     </ion-item>
+  </ion-item-group>
 
+  <ion-item-group>
+    <ion-item-divider color="light">Otros</ion-item-divider>
     <ion-item *ngFor="let other of others">
       <ion-row>
         <ion-col col-sm-1>
@@ -112,7 +124,10 @@
         </ion-col>
       </ion-row>
     </ion-item>
+  </ion-item-group>
 
+  <ion-item-group>
+    <ion-item-divider color="light">Sodas</ion-item-divider>
     <ion-item *ngFor="let soda of sodas">
       <ion-row>
         <ion-col col-sm-1>
@@ -132,6 +147,6 @@
         </ion-col>
       </ion-row>
     </ion-item>
+  </ion-item-group>
 
-  </ion-list>
 </ion-content>
