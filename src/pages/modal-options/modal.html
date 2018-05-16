@@ -15,30 +15,24 @@
   <ion-grid>
     <ion-row>
       <ion-col>
-        <a (click)="selectOption(price_s,'size.small')"><img src={{image_s}}></a>
+        <ion-card text-center (click)="selectOption(price_s,'size.small')" padding>
+          <ion-card-header><b>$ {{price_s}}</b></ion-card-header>
+          <img src="{{image_s}}">
+        </ion-card>
       </ion-col>
       <ion-col>
-        <a (click)="selectOption(price_m,'size.medium')"><img src={{image_m}></a>
+        <ion-card text-center (click)="selectOption(price_m,'size.medium')" padding>
+            <ion-card-header><b>$ {{price_m}}</b></ion-card-header>
+          <img src="{{image_m}}">
+        </ion-card>
       </ion-col>
       <ion-col>
-        <a (click)="selectOption(price_l,'size.large')"><img src={{image_l}}></a>
+        <ion-card text-center (click)="selectOption(price_l,'size.large')" padding>
+          <ion-card-header><b>$ {{price_l}}</b></ion-card-header>
+          <img src="{{image_l}}">
+        </ion-card>
       </ion-col>
     </ion-row>
-    <ion-row>
-      <ion-col text-center>
-        <div>{{price_s}}</div>
-      </ion-col>
-      <ion-col text-center>
-        <div>{{price_m}}</div>
-      </ion-col>
-      <ion-col text-center>
-        <div>{{price_l}}</div>
-      </ion-col>
-    </ion-row>
-
   </ion-grid>
 
-  <div padding>
-    <button block ion-button (click)="showConfirm()">Guardar datos</button>
-  </div>
 </ion-content>
