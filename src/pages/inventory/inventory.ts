@@ -18,7 +18,9 @@ export class InventoryPage {
   selectedItem: MenuItem;
   coffees = [];
   teas = [];
+  cold_drinks = [];
   others = [];
+  sodas = [];
   
   constructor(private datafinder: DataFinder,
     public modal: ModalController) {
@@ -30,14 +32,11 @@ export class InventoryPage {
     });
   }
 
-
   setMenuItemsData(data: any) {
     this.coffees = data.coffees;
     this.teas = data.teas;
+    this.cold_drinks = data.cold_drinks;
     this.others = data.others;
-  }
-
-  nextPage(){
-    
+    this.sodas = data.sodas;
   }
 }

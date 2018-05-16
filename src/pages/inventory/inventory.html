@@ -73,6 +73,25 @@
       </ion-row>
     </ion-item>
 
+    <ion-item *ngFor="let cold_drink of cold_drinks">
+      <ion-row>
+        <ion-col col-sm-1>
+          <div> {{cold_drink.id}} </div>
+        </ion-col>
+        <ion-col col-3>
+          <div> {{cold_drink.name}} </div>
+        </ion-col>
+        <ion-col>
+          <div> {{cold_drink.price_s }}</div>
+        </ion-col>
+        <ion-col>
+          <div> {{cold_drink.price_m }}</div>
+        </ion-col>
+        <ion-col col-sm-1>
+          <div> {{cold_drink.price_l }}</div>
+        </ion-col>
+      </ion-row>
+    </ion-item>
 
     <ion-item *ngFor="let other of others">
       <ion-row>
@@ -90,6 +109,26 @@
         </ion-col>
         <ion-col col-sm-1>
           <div> {{other.price_l }}</div>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+
+    <ion-item *ngFor="let soda of sodas">
+      <ion-row>
+        <ion-col col-sm-1>
+          <div> {{soda.id}} </div>
+        </ion-col>
+        <ion-col col-3>
+          <div> {{soda.name}} </div>
+        </ion-col>
+        <ion-col>
+          <div> {{soda.price_s }}</div>
+        </ion-col>
+        <ion-col>
+          <div> {{soda.price_m }}</div>
+        </ion-col>
+        <ion-col col-sm-1>
+          <div> {{soda.price_l }}</div>
         </ion-col>
       </ion-row>
     </ion-item>

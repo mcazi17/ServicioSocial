@@ -34,6 +34,13 @@
             "price_s": "15.00",
             "price_m": "25.00",
             "price_l": "25.00"
+        },
+        {
+            "id": 17,
+            "name": "Chocolate Caliente",
+            "price_s": "15.00",
+            "price_m": "25.00",
+            "price_l": "25.00"
         }
     ],
     "teas": [
@@ -80,7 +87,7 @@
             "price_l": "25.00"
         }
     ],
-    "others": [
+    "cold_drinks": [
         {
             "id": 12,
             "name": "Frappe de Latte",
@@ -115,20 +122,38 @@
             "price_s": "15.00",
             "price_m": "25.00",
             "price_l": "25.00"
-        },
+        }
+    ],
+    "others": [
         {
             "id": 17,
             "name": "Chocolate Caliente",
             "price_s": "15.00",
             "price_m": "25.00",
             "price_l": "25.00"
-        },
+        }
+    ],
+    "sodas": [
         {
             "id": 18,
-            "name": "Sodas",
+            "name": "Coca Cola",
             "price_s": "15.00",
-            "price_m": "25.00",
-            "price_l": "25.00"
-        }
+            "price_m": null,
+            "price_l": null
+        },
+        {
+            "id": 19,
+            "name": "Sprite",
+            "price_s": "15.00",
+            "price_m": null,
+            "price_l": null
+        },
+        {
+            "id": 20,
+            "name": "Fanta Naranja",
+            "price_s": "15.00",
+            "price_m": null,
+            "price_l": null
+        },
     ]
 }

@@ -14,24 +14,24 @@
 <ion-content padding>
   <ion-grid>
     <ion-row>
-      <ion-col col-3>
-        <a (click)="selectOption({{price_s}},'size.small')"><img src="{{item_size_s}}"></a>
+      <ion-col>
+        <a (click)="selectOption(price_s,'size.small')"><img src=""></a>
       </ion-col>
-      <ion-col col-3>
-        <a (click)="selectOption({{price_m}},'size.medium')"><img src="{{item_size_m}}"></a>
+      <ion-col>
+        <a (click)="selectOption(price_m,'size.medium')"><img src=""></a>
       </ion-col>
-      <ion-col col-3>
-        <a (click)="selectOption({{price_l}},'size.large')"><img src="{{itemsize_l}}"></a>
+      <ion-col>
+        <a (click)="selectOption(price_l,'size.large')"><img src=""></a>
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-col col-3>
+      <ion-col text-center>
         <div>{{price_s}}</div>
       </ion-col>
-      <ion-col col-3>
+      <ion-col text-center>
         <div>{{price_m}}</div>
       </ion-col>
-      <ion-col col-3>
+      <ion-col text-center>
         <div>{{price_l}}</div>
       </ion-col>
     </ion-row>

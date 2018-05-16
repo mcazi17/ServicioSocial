@@ -17,7 +17,7 @@
           </ion-card-header>
 
           <ion-list *ngFor="let coffee of coffees">
-            <button ion-item>
+            <button ion-item (click)="openModal(coffee.id,'coffees')">
               <ion-icon name="ios-cafe" item-start></ion-icon>
               {{coffee.name}}
               <ion-icon name="ios-arrow-forward" item-end></ion-icon>
@@ -32,7 +32,7 @@
           </ion-card-header>
 
           <ion-list *ngFor="let tea of teas">
-            <button ion-item>
+            <button ion-item (click)="openModal(tea.id,'teas')">
               <ion-icon name="ios-leaf" item-start></ion-icon>
               {{tea.name}}
               <ion-icon name="ios-arrow-forward" item-end></ion-icon>
@@ -47,7 +47,7 @@
           </ion-card-header>
 
           <ion-list *ngFor="let other of others">
-            <button ion-item>
+            <button ion-item (click)="openModal(other.id,'others')">
               <ion-icon name="ios-flower" item-start></ion-icon>
               {{other.name}}
               <ion-icon name="ios-arrow-forward" item-end></ion-icon>

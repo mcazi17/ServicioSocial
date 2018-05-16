@@ -31,9 +31,4 @@ export class HomePage {
     this.others = data.others;
   }
 
-  fixCardHeight(){
-    
-
-  }
-
 }
