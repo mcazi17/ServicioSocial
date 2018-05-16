@@ -90,35 +90,35 @@
     "cold_drinks": [
         {
             "id": 12,
-            "name": "Frappe de Latte",
+            "name": "Frappé de Latte",
             "price_s": "15.00",
             "price_m": "25.00",
             "price_l": "25.00"
         },
         {
             "id": 13,
-            "name": "Frappe de Mocha",
+            "name": "Frappé de Mocha",
             "price_s": "15.00",
             "price_m": "25.00",
             "price_l": "25.00"
         },
         {
             "id": 14,
-            "name": "Frappe de Oreo",
+            "name": "Frappé de Oreo",
             "price_s": "15.00",
             "price_m": "25.00",
             "price_l": "25.00"
         },
         {
             "id": 15,
-            "name": "Frappe de Chocolate",
+            "name": "Frappé de Chocolate",
             "price_s": "15.00",
             "price_m": "25.00",
             "price_l": "25.00"
         },
         {
             "id": 16,
-            "name": "Frappe de Chai",
+            "name": "Frappé de Chai",
             "price_s": "15.00",
             "price_m": "25.00",
             "price_l": "25.00"
