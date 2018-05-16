@@ -8,8 +8,7 @@ MyApp,
 HomePage,
 ListPage,
 InventoryPage,
-ModalOptions,
-ModalOptions2Page
+ModalOptions
  } from "../pages/index.pages";
 
  //providers
@@ -25,8 +24,7 @@ import { HttpModule } from '@angular/http';
     HomePage,
     ListPage,
     InventoryPage,
-    ModalOptions,
-    ModalOptions2Page
+    ModalOptions
   ],
   imports: [
     BrowserModule,
@@ -39,8 +37,7 @@ import { HttpModule } from '@angular/http';
     HomePage,
     ListPage,
     InventoryPage,
-    ModalOptions,
-    ModalOptions2Page
+    ModalOptions
   ],
   providers: [
     DataFinder,

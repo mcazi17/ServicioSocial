@@ -31,12 +31,33 @@ export class ModalOptions {
     this.price_l = this.item.price_l;
     console.log("item.name:" + this.name);
 
+
+  }
+
+  selectImage(arrayName: string) {
+    switch (arrayName) {
+      case "coffees":
+        this.image_s = "../../assets/imgs/CalienteS";
+        this.image_m = "../../assets/imgs/CalienteM";
+        this.image_l = "../../assets/imgs/CalienteL";
+        break;
+      case "teas":
+        this.image_s = "../../assets/imgs/CalienteS";
+        this.image_m = "../../assets/imgs/CalienteM";
+        this.image_l = "../../assets/imgs/CalienteL";
+        break;
+      case "cold_drinks":
+        this.image_s = "../../assets/imgs/FriaS";
+        this.image_m = "../../assets/imgs/FriaM";
+        this.image_l = "../../assets/imgs/FriaL";
+        break;
+    }
   }
 
   closeModal() {
     this.viewCtrl.dismiss();
   }
   selectOption(price: string, size: Size) {
-    
+
   }
 }
