@@ -25,12 +25,13 @@
           </ion-list>
         </ion-card>
       </ion-col>
+
+
       <ion-col>
         <ion-card>
           <ion-card-header>
             <h1>Té</h1>
           </ion-card-header>
-
           <ion-list *ngFor="let tea of teas">
             <button ion-item (click)="openModal(tea.id,'teas')">
               <ion-icon name="ios-leaf" item-start></ion-icon>
@@ -40,6 +41,41 @@
           </ion-list>
         </ion-card>
       </ion-col>
+
+
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <h1>Bebidas frías</h1>
+          </ion-card-header>
+          <ion-list *ngFor="let cold of cold_drinks">
+            <button ion-item (click)="openModal(cold.id,'cold_drinks')">
+              <ion-icon name="ios-snow" item-start></ion-icon>
+              {{cold.name}}
+              <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+            </button>
+          </ion-list>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <h1>Sodas</h1>
+          </ion-card-header>
+
+          <ion-list *ngFor="let soda of sodas">
+            <button ion-item (click)="openModal(soda.id,'sodas')">
+              <ion-icon name="ios-pint" item-start></ion-icon>
+              {{soda.name}}
+              <ion-icon name="ios-arrow-forward" item-end></ion-icon>
+            </button>
+          </ion-list>
+        </ion-card>
+      </ion-col>
+
+
       <ion-col>
         <ion-card>
           <ion-card-header>

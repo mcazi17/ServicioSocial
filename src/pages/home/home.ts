@@ -12,7 +12,9 @@ export class HomePage {
   selectedItem: MenuItem;
   coffees = [];
   teas = [];
+  cold_drinks = [];
   others = [];
+  sodas = [];
 
   constructor(private datafinder: DataFinder, public navCtrl: NavController) {
 
@@ -29,6 +31,8 @@ export class HomePage {
     this.coffees = data.coffees;
     this.teas = data.teas;
     this.others = data.others;
+    this.cold_drinks = data.cold_drinks;
+    this.sodas = data.sodas;
   }
 
 }
