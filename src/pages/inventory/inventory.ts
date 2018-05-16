@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, ModalController } from 'ionic-angular';
+import { Nav, NavController, NavParams, ModalController } from 'ionic-angular';
 import { DataFinder } from "../../providers/index.providers";
 import { MenuItem } from '../menuitem';
+import { SlidesPage } from '../../pages/slides/slides';
+
 
 /**
  * Generated class for the InventoryPage page.
@@ -14,6 +16,7 @@ import { MenuItem } from '../menuitem';
   selector: 'page-inventory',
   templateUrl: 'inventory.html',
 })
+
 export class InventoryPage {
   selectedItem: MenuItem;
   coffees = [];
@@ -21,9 +24,9 @@ export class InventoryPage {
   cold_drinks = [];
   others = [];
   sodas = [];
-  
-  constructor(private datafinder: DataFinder,
-    public modal: ModalController) {
+  slides: boolean = false;
+
+  constructor(private datafinder: DataFinder, public modal: ModalController, public navCtrl: NavController) {
   }
 
   ionViewDidLoad() {
@@ -38,5 +41,10 @@ export class InventoryPage {
     this.cold_drinks = data.cold_drinks;
     this.others = data.others;
     this.sodas = data.sodas;
+  }
+
+  openSlides() {
+    this.navCtrl.push(SlidesPage);
+    console.log("Open slides" + this.slides);
   }
 }

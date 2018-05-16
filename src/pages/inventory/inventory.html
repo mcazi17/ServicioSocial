@@ -6,7 +6,7 @@
     <ion-title>Inventory</ion-title>
 
     <ion-buttons end>
-      <button ion-button color="primary" (click)="nextPage()" outline>Editar Elementos</button>
+      <button ion-button color="primary" (click)="openSlides()" outline>Editar Elementos</button>
     </ion-buttons>
   </ion-navbar>
 </ion-header>
@@ -148,5 +148,25 @@
       </ion-row>
     </ion-item>
   </ion-item-group>
+
+  <ion-slides pager *ngIf="slides">
+    <ion-toolbar>
+      <ion-buttons end>
+        <button ion-button color="primary" (click)="closeSlides()">Cerrar</button>
+      </ion-buttons>
+    </ion-toolbar>
+
+    <ion-slide style="background-color: green">
+      <h2>Slide 1</h2>
+    </ion-slide>
+
+    <ion-slide style="background-color: blue">
+      <h2>Slide 2</h2>
+    </ion-slide>
+
+    <ion-slide style="background-color: red">
+      <h2>Slide 3</h2>
+    </ion-slide>
+  </ion-slides>
 
 </ion-content>
