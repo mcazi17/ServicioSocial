@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, ModalController } from 'ionic-angular';
 import { DataFinder } from "../../providers/index.providers";
-import { MenuItem } from '../menuitem';
-import { ModalOptions } from "../index.pages";
+import { MenuItem, Size } from '../menuitem';
+import { ModalOptions, CharacteristicsPage } from "../index.pages";
 
 @Component({
   selector: 'page-home',
@@ -81,8 +81,14 @@ export class HomePage {
       console.log("My returned data: " + item);
     });
   }
-  openCharacteristics(){
-    console.log("OpenCharcteristics");
+  
+  openShowVideos(name: string,array_name: string, price: string) {
+    var MyItem = {
+      array_name: array_name,
+      name: name,
+      price: price
+    }
+    //this.navCtrl.push(CharacteristicsPage,{'item': MyItem});
   }
 
 }

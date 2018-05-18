@@ -1,18 +1,82 @@
-<!--
-  Generated template for the CharacteristicsPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>characteristics</ion-title>
+    <ion-title>{{name}}</ion-title>
   </ion-navbar>
-
 </ion-header>
 
-
 <ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center>
+        <h1>{{name}}</h1>
+        <img src="{{image}}">
+        <h1>{{price}}</h1>
+      </ion-col>
+      <ion-col>
+        <ion-item-group radio-group>
+          <ion-item-divider color="light">
+            Leche
+          </ion-item-divider>
+          <ion-item>
+            <ion-label>Ninguna</ion-label>
+            <ion-radio checked="true" value="ninguna"></ion-radio>
+          </ion-item>
 
+          <ion-item>
+            <ion-label>Entera</ion-label>
+            <ion-radio value="entera"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Deslactosada</ion-label>
+            <ion-radio value="deslactosada"></ion-radio>
+          </ion-item>
+
+        </ion-item-group>
+
+        <ion-item-group *ngIf="array_name != 'cold_drinks'" radio-group>
+          <ion-item-divider color="light">
+            Endulzante
+          </ion-item-divider>
+          <ion-item>
+            <ion-label>Ninguno</ion-label>
+            <ion-radio checked="true" value="ninguno"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Azúcar</ion-label>
+            <ion-radio value="azucar"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Miel</ion-label>
+            <ion-radio value="miel"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>Splenda</ion-label>
+            <ion-radio value="splenda"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>Stevia</ion-label>
+            <ion-radio value="stevia"></ion-radio>
+          </ion-item>
+        </ion-item-group>
+
+        <ion-item-group *ngIf="array_name != 'cold_drinks'" radio-group>
+          <ion-item-divider color="light">
+            Otros
+          </ion-item-divider>
+          <ion-item>
+            <ion-label>Caliente</ion-label>
+            <ion-radio checked="true" value="caliente"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Con hielos</ion-label>
+            <ion-radio value="frio"></ion-radio>
+          </ion-item>
+        </ion-item-group>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
