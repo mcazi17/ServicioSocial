@@ -1,7 +1,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>{{name}}</ion-title>
+    <ion-title>Seleccione el tamaño de su bebida</ion-title>
     <ion-buttons end>
       <button ion-button icon-only (click)="closeModal()">
         <ion-icon name="close"></ion-icon>
@@ -11,28 +11,34 @@
 
 </ion-header>
 
-<ion-content padding>
+<ion-content padding class="align-content">
   <ion-grid>
     <ion-row>
       <ion-col>
         <ion-card text-center (click)="selectOption(price_s,'size.small')" padding>
-          <ion-card-header><b>$ {{price_s}}</b></ion-card-header>
+          <ion-card-header>
+            <b>$ {{price_s}}</b>
+          </ion-card-header>
           <img src="{{image_s}}">
         </ion-card>
       </ion-col>
       <ion-col>
         <ion-card text-center (click)="selectOption(price_m,'size.medium')" padding>
-            <ion-card-header><b>$ {{price_m}}</b></ion-card-header>
+          <ion-card-header>
+            <b>$ {{price_m}}</b>
+          </ion-card-header>
           <img src="{{image_m}}">
         </ion-card>
       </ion-col>
       <ion-col>
         <ion-card text-center (click)="selectOption(price_l,'size.large')" padding>
-          <ion-card-header><b>$ {{price_l}}</b></ion-card-header>
+          <ion-card-header>
+            <b>$ {{price_l}}</b>
+          </ion-card-header>
           <img src="{{image_l}}">
         </ion-card>
       </ion-col>
     </ion-row>
   </ion-grid>
-
+  <h2 text-center>{{name}}</h2>
 </ion-content>
