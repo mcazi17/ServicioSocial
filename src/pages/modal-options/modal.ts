@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController, AlertController } from 'ionic-angular';
 import { Size } from '../menuitem';
+import { CharacteristicsPage } from '../index.pages';
 
 @Component({
   selector: 'page-modal-options',
@@ -48,30 +49,17 @@ export class ModalOptions {
     }
   }
 
-  selectImage(arrayName: string) {
-    switch (arrayName) {
-      case "coffees":
-        this.image_s = "https://ia.media-imdb.com/images/M/MV5BMjM2MDgxMDg0Nl5BMl5BanBnXkFtZTgwNTM2OTM5NDE@._V1_UX182_CR0,0,182,268_AL_.jpg";
-        this.image_m = "../../assets/imgs/CalienteM.jpg";
-        this.image_l = "../../assets/imgs/CalienteL.jpg";
-        break;
-      case "teas":
-        this.image_s = "../../assets/imgs/CalienteS.jpg";
-        this.image_m = "../../assets/imgs/CalienteM.jpg";
-        this.image_l = "../../assets/imgs/CalienteL.jpg";
-        break;
-      case "cold_drinks":
-        this.image_s = "../../assets/imgs/FriaS.jpg";
-        this.image_m = "../../assets/imgs/FriaM.jpg";
-        this.image_l = "../../assets/imgs/FriaL.jpg";
-        break;
-    }
-  }
-
   closeModal() {
     this.viewCtrl.dismiss();
   }
-  selectOption(price: string, size: Size) {
-    console.log("CLICK");
+
+  selectOption(name: string,array_name: string, price: string, size: string) {
+    var MyItem = {
+      array_name: array_name,
+      name: name,
+      price: price,
+      size: size
+    }
+    this.navCtrl.push(CharacteristicsPage,{'item': MyItem});
   }
 }

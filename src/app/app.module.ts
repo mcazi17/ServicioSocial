@@ -9,7 +9,9 @@ HomePage,
 ListPage,
 InventoryPage,
 ModalOptions,
-SlidesPage
+SlidesPage,
+VideosPage,
+CharacteristicsPage
  } from "../pages/index.pages";
 
  //providers
@@ -26,7 +28,10 @@ import { HttpModule } from '@angular/http';
     ListPage,
     InventoryPage,
     ModalOptions,
-    SlidesPage
+    SlidesPage,
+    VideosPage,
+    CharacteristicsPage
+
   ],
   imports: [
     BrowserModule,
@@ -40,7 +45,9 @@ import { HttpModule } from '@angular/http';
     ListPage,
     InventoryPage,
     ModalOptions,
-    SlidesPage
+    SlidesPage,
+    VideosPage,
+    CharacteristicsPage
   ],
   providers: [
     DataFinder,

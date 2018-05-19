@@ -66,7 +66,7 @@
           </ion-card-header>
 
           <ion-list *ngFor="let soda of sodas">
-            <button ion-item (click)="openCharacteristics">
+            <button ion-item (click)="openShowVideos(soda.name,'sodas',sodas.price_s)">
               <ion-icon name="ios-pint" item-start></ion-icon>
               {{soda.name}}
               <ion-icon name="ios-arrow-forward" item-end></ion-icon>
