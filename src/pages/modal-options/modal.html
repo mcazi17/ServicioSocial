@@ -15,7 +15,7 @@
   <ion-grid>
     <ion-row>
       <ion-col>
-        <ion-card text-center (click)="selectOption(price_s,'size.small')" padding>
+        <ion-card text-center (click)="selectOption(name, arrayName,price_s,'small')" padding>
           <ion-card-header>
             <b>$ {{price_s}}</b>
           </ion-card-header>
@@ -23,7 +23,7 @@
         </ion-card>
       </ion-col>
       <ion-col>
-        <ion-card text-center (click)="selectOption(price_m,'size.medium')" padding>
+        <ion-card text-center (click)="selectOption(name, arrayName,price_m,'medium')" padding>
           <ion-card-header>
             <b>$ {{price_m}}</b>
           </ion-card-header>
@@ -31,7 +31,7 @@
         </ion-card>
       </ion-col>
       <ion-col>
-        <ion-card text-center (click)="selectOption(price_l,'size.large')" padding>
+        <ion-card text-center (click)="selectOption(name,arrayName,price_l,'large')" padding>
           <ion-card-header>
             <b>$ {{price_l}}</b>
           </ion-card-header>

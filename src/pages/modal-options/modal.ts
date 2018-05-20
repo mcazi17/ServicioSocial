@@ -14,7 +14,6 @@ export class ModalOptions {
   price_s: string;
   price_m: string;
   price_l: string;
-  size: Size
   image_l: string;
   image_m: string;
   image_s: string;
