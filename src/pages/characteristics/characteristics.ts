@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 import { Size } from '../menuitem';
+import { VideosPage } from '../index.pages';
 
 @Component({
   selector: 'page-characteristics',
@@ -14,6 +15,9 @@ export class CharacteristicsPage {
   size: string;
   image: string;
   images = [];
+  milk: string;
+  sweetener: string;
+  other: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
     public viewCtrl: ViewController) {
@@ -26,7 +30,7 @@ export class CharacteristicsPage {
     this.array_name = this.item.array_name;
     this.size = this.item.size;
     console.log('Item:' + JSON.stringify(this.item));
-    
+
     switch (this.array_name) {
       case "coffees":
       case "others":
@@ -44,7 +48,7 @@ export class CharacteristicsPage {
         this.images.push("././assets/imgs/Lata.jpg");
         break;
     }
-    
+
     switch (this.size) {
       case "small":
         this.image = this.images[0];
@@ -56,11 +60,23 @@ export class CharacteristicsPage {
         this.image = this.images[2];
         break;
     }
-    console.log("Image:"+this.image);
+    console.log("Image:" + this.image);
   }
 
-previousPage(){
-  this.navCtrl.pop();
-}
+  previousPage() {
+    this.navCtrl.pop();
+  }
+
+  nextPage() {
+    this.navCtrl.push(VideosPage, {
+      name: this.name, 
+      price: this.price,
+      size: this.size,
+      image: this.image,
+      milk: this.milk,
+      sweetener: this.sweetener,
+      other: this.other
+    });
+  }
 
 }
