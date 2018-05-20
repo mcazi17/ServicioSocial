@@ -10,12 +10,40 @@
       <ion-col text-center>
         <h1>{{name}}</h1>
         <img src="{{image}}">
-        <h1>{{price}}</h1>
+        <h1>$ {{price}} m.n.</h1>
         <br>
         <button ion-button full (click)="nextPage()">ORDENAR</button>
       </ion-col>
       <ion-col>
-        <ion-item-group radio-group [(ngModel)]="milk">
+        <ion-item-group *ngIf="array_name != 'cold_drinks' && array_name != 'sodas'" radio-group [(ngModel)]="other">
+          <ion-item-divider color="light">
+            Temperatura
+          </ion-item-divider>
+          <ion-item>
+            <ion-label>Caliente</ion-label>
+            <ion-radio checked="true" value="Caliente"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>Frío</ion-label>
+            <ion-radio value="Frío"></ion-radio>
+          </ion-item>
+        </ion-item-group>
+
+        <ion-item-group *ngIf="array_name == 'sodas'" radio-group [(ngModel)]="other_sodas">
+            <ion-item-divider color="light">
+              Temperatura
+            </ion-item-divider>  
+            <ion-item>
+              <ion-label>Fría</ion-label>
+              <ion-radio checked="true" value="Fría"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label>Al tiempo</ion-label>
+              <ion-radio value="Al tiempo"></ion-radio>
+            </ion-item>
+          </ion-item-group>
+
+        <ion-item-group radio-group [(ngModel)]="milk" *ngIf="array_name != 'sodas'">
           <ion-item-divider color="light">
             Leche
           </ion-item-divider>
@@ -36,7 +64,7 @@
 
         </ion-item-group>
 
-        <ion-item-group *ngIf="array_name != 'cold_drinks'" radio-group [(ngModel)]="sweetener">
+        <ion-item-group *ngIf="array_name != 'cold_drinks' && array_name != 'sodas'" radio-group [(ngModel)]="sweetener">
           <ion-item-divider color="light">
             Endulzante
           </ion-item-divider>
@@ -61,21 +89,6 @@
           <ion-item>
             <ion-label>Stevia</ion-label>
             <ion-radio value="Stevia"></ion-radio>
-          </ion-item>
-        </ion-item-group>
-
-        <ion-item-group *ngIf="array_name != 'cold_drinks'" radio-group [(ngModel)]="other">
-          <ion-item-divider color="light">
-            Otros
-          </ion-item-divider>
-          <ion-item>
-            <ion-label>Caliente</ion-label>
-            <ion-radio checked="true" value="Caliente"></ion-radio>
-          </ion-item>
-
-          <ion-item>
-            <ion-label>Con hielos</ion-label>
-            <ion-radio value="Frío"></ion-radio>
           </ion-item>
         </ion-item-group>
       </ion-col>

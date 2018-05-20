@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Videos</ion-title>
+    <ion-title>Pedido</ion-title>
     <ion-buttons end>
       <button ion-button (click)="backToMenu()">
         REGRESAR AL MENÚ PRINCIPAL
@@ -17,35 +17,42 @@
 
 </ion-header>
 
-
 <ion-content padding class="card-background-page">
   <ion-grid>
     <ion-row>
-      <ion-col col-auto>
+      <ion-col>
         <ion-card>
           <ion-card-content>
             <ion-card-title>
               {{name}}
+              <h1 *ngIf="isOther">{{other}}
+                <br>
+              </h1>
+              <h1 *ngIf="isOtherSodas">{{other_sodas}}
+                <br>
+              </h1>
             </ion-card-title>
-            <h1>
-              <b>TOTAL: </b>$ {{price}} pesos
-            </h1>
-            <h2>
+            <h2 *ngIf="isSize">
               <b>Tamaño: </b>{{size}}
               <br>
+            </h2>
+            <h2 *ngIf="isMilk">
               <b>Leche: </b>{{milk}}
               <br>
+            </h2>
+            <h2 *ngIf="isSweet">
               <b>Endulzante: </b>{{sweetener}}
               <br>
-              <b>Otros: </b>{{other}}
-              <br>
+            </h2>
+            <h2 id="total">
+              <b>TOTAL: </b>$ {{price}} m.n.
             </h2>
           </ion-card-content>
         </ion-card>
       </ion-col>
-      <ion-col>
-        <ion-card id="gif">
-          <img src="././assets/imgs/test.gif" />
+      <ion-col col-auto>
+        <ion-card>
+          <img src={{video}} />
         </ion-card>
       </ion-col>
     </ion-row>

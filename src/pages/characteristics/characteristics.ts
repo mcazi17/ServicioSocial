@@ -15,9 +15,10 @@ export class CharacteristicsPage {
   size: string;
   image: string;
   images = [];
-  milk: string;
-  sweetener: string;
-  other: string;
+  milk: string = "Ninguna";
+  sweetener: string = "Ninguno";
+  other: string = "Caliente";
+  other_sodas: string = "Fría";
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
     public viewCtrl: ViewController) {
@@ -45,7 +46,7 @@ export class CharacteristicsPage {
         this.images.push("././assets/imgs/FriaL.jpg");
         break;
       case "sodas":
-        this.images.push("././assets/imgs/Lata.jpg");
+        this.image = "././assets/imgs/Lata.jpg";
         break;
     }
 
@@ -69,13 +70,15 @@ export class CharacteristicsPage {
 
   nextPage() {
     this.navCtrl.push(VideosPage, {
-      name: this.name, 
+      name: this.name,
       price: this.price,
       size: this.size,
       image: this.image,
       milk: this.milk,
       sweetener: this.sweetener,
-      other: this.other
+      other: this.other,
+      array_name: this.array_name,
+      other_sodas: this.other_sodas
     });
   }
 

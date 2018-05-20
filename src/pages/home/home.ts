@@ -73,7 +73,7 @@ export class HomePage {
       price_m: this.selectedItem.price_m,
       price_l: this.selectedItem.price_l
     }
-  
+
     let myModal = this.modal.create(ModalOptions, { item: MyItem });
     myModal.present();
 
@@ -81,14 +81,31 @@ export class HomePage {
       console.log("My returned data: " + item);
     });
   }
-  
-  openShowVideos(name: string,array_name: string, price: string) {
-    var MyItem = {
-      array_name: array_name,
-      name: name,
-      price: price
+
+  openCharacteristics(id: number, arrayName: string) {
+    console.log("Array: " + arrayName);
+    console.log("Id: " + id);
+    var currentItems = [];
+
+    switch (arrayName) {
+      case "sodas":
+        currentItems = this.sodas;
+        break;
     }
-    //this.navCtrl.push(CharacteristicsPage,{'item': MyItem});
+
+    for (let i in currentItems) {
+      if (currentItems[i].id == id) {
+        this.selectedItem = new MenuItem(currentItems[i].id, currentItems[i].name, currentItems[i].price_s, currentItems[i].price_m, currentItems[i].price_l);
+      }
+    }
+    var MyItem = {
+      id: id,
+      array_name: arrayName,
+      name: this.selectedItem.name,
+      price: this.selectedItem.price_s,
+    }
+
+    this.navCtrl.push(CharacteristicsPage, { 'item': MyItem });
   }
 
 }

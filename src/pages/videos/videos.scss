@@ -1,19 +1,39 @@
 page-videos {
+    ion-card {
+        position: relative;
+        text-align: center;
+        align-content: center;
+        margin: 0!important;
+        padding: 0!important;
+    }
+
+    ion-card-title{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 30pt!important;
+        text-align: left!important;
+    }   
+
     h1{
+        text-transform: none!important;
         font-size: 16pt!important;
         line-height: 1.5;
+        text-align: left!important;
     }
     h2{
         text-transform: capitalize;
         font-size: 16pt!important;
         line-height: 1.5;
-    }
-    ion-card-title{
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 30pt!important;
-    }  
+        text-align: left!important;
+    }   
+    #total{
+        line-height: 2.0;
+        margin: 2pt;
+        text-transform: none!important;
+    } 
 }
+
+
 
 
 
