@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the VideosPage page.
@@ -24,6 +25,7 @@ export class VideosPage {
   sweetener: string;
   other: string;
   video: string;
+  title: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -48,6 +50,11 @@ export class VideosPage {
         this.video = "././assets/imgs/test.gif"
         break;
     }
+  }
+
+  backToMenu(){
+    this.navCtrl.setRoot(HomePage);
+    this.navCtrl.popToRoot();
   }
 
 }
