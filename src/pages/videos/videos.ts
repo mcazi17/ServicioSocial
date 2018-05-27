@@ -16,6 +16,8 @@ import { HomePage } from '../home/home';
 })
 export class VideosPage {
 
+  //Everything works now. Saved to v1 branch
+
   item: any;
   name: string;
   price: string;
