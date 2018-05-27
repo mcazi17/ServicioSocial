@@ -2,42 +2,35 @@
     "coffees": [
         {
             "id": 1,
-            "name": "Café Americano",
+            "name": "Americano",
             "price_s": "15.00",
             "price_m": "25.00",
             "price_l": "25.00"
         },
         {
             "id": 2,
-            "name": "Café Mocha",
+            "name": "Mocha",
             "price_s": "15.00",
             "price_m": "25.00",
             "price_l": "25.00"
         },
         {
             "id": 3,
-            "name": "Café Espresso",
+            "name": "Espresso",
             "price_s": "15.00",
             "price_m": "25.00",
             "price_l": "25.00"
         },
         {
             "id": 4,
-            "name": "Café Cappuccino",
+            "name": "Cappuccino",
             "price_s": "15.00",
             "price_m": "25.00",
             "price_l": "25.00"
         },
         {
             "id": 5,
-            "name": "Café Latte",
-            "price_s": "15.00",
-            "price_m": "25.00",
-            "price_l": "25.00"
-        },
-        {
-            "id": 17,
-            "name": "Chocolate Caliente",
+            "name": "Latte",
             "price_s": "15.00",
             "price_m": "25.00",
             "price_l": "25.00"
@@ -90,35 +83,35 @@
     "cold_drinks": [
         {
             "id": 12,
-            "name": "Frappé de Latte",
+            "name": "Frappé Latte",
             "price_s": "15.00",
             "price_m": "25.00",
             "price_l": "25.00"
         },
         {
             "id": 13,
-            "name": "Frappé de Mocha",
+            "name": "Frappé Mocha",
             "price_s": "15.00",
             "price_m": "25.00",
             "price_l": "25.00"
         },
         {
             "id": 14,
-            "name": "Frappé de Oreo",
+            "name": "Frappé Oreo",
             "price_s": "15.00",
             "price_m": "25.00",
             "price_l": "25.00"
         },
         {
             "id": 15,
-            "name": "Frappé de Chocolate",
+            "name": "Frappé Chocolate",
             "price_s": "15.00",
             "price_m": "25.00",
             "price_l": "25.00"
         },
         {
             "id": 16,
-            "name": "Frappé de Chai",
+            "name": "Frappé Chai",
             "price_s": "15.00",
             "price_m": "25.00",
             "price_l": "25.00"

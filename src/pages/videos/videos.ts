@@ -85,8 +85,80 @@ export class VideosPage {
 
   findVideo() {
     switch (this.name) {
+      case "Americano":
+        this.video = "././assets/gifs/cafe_americano.gif"
+        console.log("Video: ", this.video)
+        break;
+      case "Cappucino":
+        this.video = "././assets/gifs/cafe_cappuccino.gif"
+        console.log("Video: ", this.video)
+        break;
+      case "Latte":
+        this.video = "././assets/gifs/cafe_latte.gif"
+        console.log("Video: ", this.video)
+        break;
+      case "Mocha":
+        this.video = "././assets/gifs/cafe_mocha.gif"
+        console.log("Video: ", this.video)
+        break;
+      case "Espresso":
+        this.video = "././assets/gifs/cafe_espresso.gif"
+        console.log("Video: ", this.video)
+        break;
+      case "Chocolate caliente":
+        this.video = "././assets/gifs/chocolate_caliente.gif"
+        console.log("Video: ", this.video)
+        break;
       case "Coca Cola":
-        this.video = "././assets/imgs/test.gif"
+        this.video = "././assets/gifs/coca_cola.gif"
+        console.log("Video: ", this.video)
+        break;
+      case "Fanta Naranja":
+        this.video = "././assets/gifs/fanta_naranja.gif"
+        console.log("Video: ", this.video)
+        break;
+      case "Frappé Chai":
+        this.video = "././assets/gifs/frappe_chai.gif"
+        console.log("Video: ", this.video)
+        break;
+      case "Frappé Latte":
+        this.video = "././assets/gifs/frappe_chai.gif"
+        console.log("Video: ", this.video)
+        break;
+      case "Frappé Mocha":
+        this.video = "././assets/gifs/frappe_chai.gif"
+        console.log("Video: ", this.video)
+        break;
+      case "Frappé Oreo":
+        this.video = "././assets/gifs/frappe_chai.gif"
+        console.log("Video: ", this.video)
+        break;
+      case "Sprite":
+        this.video = "././assets/gifs/sprite.gif"
+        console.log("Video: ", this.video)
+        break;
+      case "Té Chai":
+        this.video = "././assets/gifs/te_chai.gif"
+        console.log("Video: ", this.video)
+        break;
+      case "Té Manzanilla":
+        this.video = "././assets/gifs/te_manzanilla.gif"
+        console.log("Video: ", this.video)
+        break;
+      case "Té Menta":
+        this.video = "././assets/gifs/te_menta.gif"
+        console.log("Video: ", this.video)
+        break;
+      case "Té Negro":
+        this.video = "././assets/gifs/te_negro.gif"
+        console.log("Video: ", this.video)
+        break;
+      case "Té Rojo":
+        this.video = "././assets/gifs/te_rojo.gif"
+        console.log("Video: ", this.video)
+        break;
+      case "Té Verde":
+        this.video = "././assets/gifs/te_verde.gif"
         console.log("Video: ", this.video)
         break;
       default:
