@@ -6,7 +6,6 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { 
 MyApp,
 HomePage,
-ListPage,
 InventoryPage,
 ModalOptions,
 SlidesPage,
@@ -25,7 +24,6 @@ import { HttpModule } from '@angular/http';
   declarations: [
     MyApp,
     HomePage,
-    ListPage,
     InventoryPage,
     ModalOptions,
     SlidesPage,
@@ -42,7 +40,6 @@ import { HttpModule } from '@angular/http';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,
     InventoryPage,
     ModalOptions,
     SlidesPage,
